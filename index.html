@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="styles/general.css">
+	<link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="styles/fontello.css">
+	<link rel="stylesheet" type="text/css" href="styles/animation.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/underscore.js"></script>
+	<script type="text/javascript" src="js/velocity.js"></script>
+	<script type="text/javascript" src="js/velocity-ui.js"></script>
+	<script type="text/javascript" src="js/links.core.js"></script>
+	<script type="text/javascript" src="js/interface.core.js"></script>
+	<script type="text/javascript" src="js/homepage.core.js"></script>
+	<script type="text/javascript" src="js/homepage.script.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+
+	<div id="alertSaved">Saved</div>
+	<a href="javascript:;" title="Modifier l'arrière plan" class="manage-background icon-picture icon-no-margin"></a>
+
+	<div id="todayData">
+		<i id="weatherIcon" class="icon-sun icon-no-margin"></i>
+		<div id="weatherData">
+			<b class="weather-location">Toulouse, France</b>
+			<span class="weather-temperature">26<i class="icon-celcius icon-no-margin"></i></span>
+			<span class="weather-state">Ensoleillé</span>
+		</div>
+		<div id="currentTime">
+			<div class="seconds"></div>
+			<span class="hours">15</span>:<span class="minutes">19</span>
+		</div>
+	</div>
+
+	<ul id="listLinks" class="sortable">
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+		<li class="animated">
+			<a class="link" href=""><img src="" /><div class="title animated"></div></a>
+			<a class="manage icon-cog icon-no-margin" href="javascript:;" title="Gérer ce lien"></a>
+		</li>
+	</ul>
+
+	<div id="search_field">
+		<form method="get" action="https://www.google.fr/search">
+			<input type="text" placeholder="Recherche..." name="q" /><!--
+			--><input type="submit" value="Rechercher">
+		</form>
+	</div>
+
+	<div id="manage" class="form">
+		<h3>Modifier un Lien</h3>
+		<div>
+			<label for="text">Nom : </label>
+			<input id="text" type="text" />
+		</div>
+		<div>
+			<label for="url">Url : </label>
+			<input id="url" class="auto-select" type="text" />
+		</div>
+		<div>
+			<label for="image">Image : </label>
+			<input id="image" class="auto-select" type="text" />
+		</div>
+		<div>
+			<button class="save">Enregistrer</button>
+			<button class="cancel">Annuler</button>
+		</div>
+	</div>
+
+	<div id="manageBackground" class="form">
+		<h3>Modifier l'arrière plan</h3>
+		<div>
+			<label for="bgurl">Url : </label>
+			<input id="bgurl" class="auto-select" type="text">
+		</div>
+		<div>
+			<button class="save">Enregistrer</button>
+			<button class="cancel">Annuler</button>
+		</div>
+	</div>
+
+</body>
+</html>
